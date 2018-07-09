@@ -1,0 +1,99 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ display: flex;
+ justify-content: center;
+ background: #ffbf46;
+}
+
+.main{
+ flex: 0 0 90%;
+ text-align: center;
+ margin: 3rem 0;
+}
+.grocery{
+ border:1px solid black;
+ border-radius: 1rem;
+ padding: 1rem;
+ background: #575761;
+ box-shadow: 3px 3px 3px rgb(0,0,0);
+}
+.grocery__title{
+ text-transform: uppercase;
+ margin: 0.5rem 0;
+ color: #648381;
+ font-size: 2rem;
+}
+.add-item{
+ width: 90%;
+ font-size: 1.5rem;
+ padding: 0.5rem;
+ border:none;
+ background: transparent;
+ border-bottom: 3px solid white;
+ margin: 1rem 0; 
+ outline: none;
+ color: white;
+}
+
+.btn{
+ display: block;
+ width: 50%;
+ margin: 0.5rem auto;
+ font-size: 1.5rem;
+ text-transform: capitalize;
+ padding: 0.25rem;
+ background: transparent;
+ color: #648381;
+ border: 3px solid #648381;
+ transition: all 1s ease;
+ cursor: pointer;
+ outline: none;
+}
+.btn:hover{
+ background: #648381;
+ color: white;
+ 
+}
+.grocery-list{
+ border: 1px solid black;
+ margin: 2rem 0;
+ padding: 1rem;
+ border-radius: 1rem;
+ background: #8ACB88;
+  box-shadow: 3px 3px 3px rgb(0,0,0);
+
+}
+.grocery-list__title{
+ text-transform: uppercase;
+ color: #575761;
+}
+.grocery-item{
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ margin: 0.25rem 0;
+transition: all 1s linear;
+    padding: 0.5rem 1rem;
+}
+.grocery-item:hover{
+    background: #E4FDE1;
+    border-radius: 0.5rem;
+}
+.grocery-item__title{
+ text-transform: capitalize;
+  color: #575761;
+
+}
+.remove-item{
+ color:red;
+ cursor: pointer;
+}
+@media screen and (min-width:776px){
+.main{
+ flex: 0 0 50%;
+}
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grocery List</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <section class="main">
+    <article class="grocery">
+      <h1 class="grocery__title">Add a grocery item</h1>
+      <form action="#">
+        <input type="text" placeholder="Add item here" class="add-item">
+        <button type="button" class="btn submitBtn">add item</button>
+      </form>
+    </article>
+    <article class="grocery-list">
+      <h1 class="grocery-list__title">grocery list</h1>
+      <div class="grocery-list__table">
+        <!-- grocery item -->
+        <div class="grocery-item">
+          <h2 class="grocery-item__title">orange</h2>
+          <a href="#" class="remove-item">
+            <i class="fas fa-trash-alt"></i>
+          </a>
+        </div>
+        <!-- end of grocery item -->
+      </div>
+      <button type="button" class="btn clearBtn">clear list</button>
+    </article>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
